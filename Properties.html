@@ -1,164 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Css/Style.css">
     <link rel="stylesheet" href="Css/Meadia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-      <header>
-        <div><img src="image/email.png" width="20px" alt="">&nbsp info@company.com
-            <img src="image/email.png" width="20px" alt="">&nbsp Sunny Isles Beach, FL 33160
+    <div class="top-header">
+        <div class="top-header-img">
+            <i class="fa-solid fa-envelope"></i> info@company.com
+            <i class="fa-regular fa-map"></i> Sunny Isles Beach, FL 33160
         </div>
 
-        <div>
-            <img src="image/facebook.webp" width="50px" alt="">
-            <img src="image/twiter.webp" width="50px" alt="">
-            <img src="image/linkdin.png" width="50px" alt="">
-            <img src="image/insta.png" width="50px" alt="">
+        <div class="top-header-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>VILLA</h1>
+        </div>
+        <div class="li">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a style="color: #f35525;" href="properties.html">Properties</a></li>
+                <li><a href="Property Details.html">Property details</a></li>
+                <li><a href="Contact Us.html">Contact us</a></li>
+                <li><a style="color: #ffffff;" class="Schedule" href="#"><i class="fa-solid fa-calendar"></i>Schedule a
+                        visit</a></li>
+            </ul>
         </div>
     </header>
     <main>
-    <section>
-        <div>
-            <h1>VILLA</h1>
-        </div>
-        <div>
+
+
+        <section class="properties-banner">
+            <img src="image/properties-banner.jpg" width="100%" height="100%" alt="">
+            <div class="properties-link">
+                <div class="heading">
+                    <h6>Properties</h6>
+                </div>
+                <p>
+                    <a href="Home.html">Home</a>&nbsp/
+                    <a href="Properties.html">Properties</a>
+                </p>
+            </div>
+        </section>
+        <section class="properties-button">
+            <div class="deal-info-button">
+                <button style="background-color: #f35525;">Show All</button>
+                <button>Appartment</button>
+                <button>Villa House</button>
+                <button>Penthouse</button>
+            </div>
+        </section>
+        <section class="product-properties">
+            <div class="property-row">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img4.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Luxury Villa</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$2.264.000</h4>
+                        <h3>18 New streat miami,OR97219</h3>
+                        <p>Bedrooms: <span>8</span>&nbsp &nbsp&nbsp&nbsp Bathrooms: <span>8</span> <br> Area: 545m2
+                            &nbsp &nbsp &nbsp Floor: <span>3</span><br> Parking: <span>6</span> spots</p>
+                        <hr>
+                        <button> Schedule a visit</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img6.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Luxury Villa</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$1.180.000</h4>
+                        <h3>54 New Street Floride.OR 27001</h2>
+                            <p>Bedrooms: 6 &nbsp&nbsp&nbsp&nbsp Bathrooms: 5 <br> Area: 450m2 &nbsp&nbsp&nbsp&nbsp
+                                Floor: 3<br> Parking: 8 spots</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img4.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Luxury Villa</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$2.264.000</h4>
+                        <h3>26 Mid Street Portland,Or 3854</h2>
+                            <p>Bedrooms: 5 &nbsp&nbsp&nbsp&nbsp Bathrooms: 4 <br> Area: 225m2 &nbsp&nbsp&nbsp&nbsp
+                                Floor: 3<br> Parking: 10 spots</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="property-row">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img7.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Apartment</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$584.500</h4>
+                        <h3>12 Hope Street Portland,12650</h2>
+                            <p>Bedrooms: 4 &nbsp&nbsp&nbsp Bathrooms: 3 <br> Area: 125m2 &nbsp&nbsp&nbsp&nbsp Floor:
+                                25th<br> Parking: 2 cars</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img8.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Penthouse</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$925.600</h4>
+                        <h3>34 Hope street Portland,42680</h2>
+                            <p>Bedrooms: 4 &nbsp&nbsp&nbsp Bathrooms: 4 <br> Area: 180m2 &nbsp&nbsp&nbsp&nbsp Floor:
+                                38th<br> Parking: 2 cars</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img9.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Modern Condo</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$450.000</h4>
+                        <h3>18 New streat miami,OR97219</h2>
+                            <p>Bedrooms: 3 &nbsp&nbsp&nbsp Bathrooms: 2 <br> Area: 165m2 &nbsp&nbsp&nbsp Floor: 26th<br>
+                                Parking: 3 cars</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="property-row">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img5.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Luxury Villa</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$2.264.000</h4>
+                        <h3>18 New streat miami,OR97219</h3>
+                        <p>Bedrooms: <span>8</span>&nbsp &nbsp&nbsp&nbsp Bathrooms: <span>8</span> <br> Area: 545m2
+                            &nbsp &nbsp &nbsp Floor: <span>3</span><br> Parking: <span>6</span> spots</p>
+                        <hr>
+                        <button> Schedule a visit</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img4.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Luxury Villa</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$1.180.000</h4>
+                        <h3>54 New Street Floride.OR 27001</h2>
+                            <p>Bedrooms: 6 &nbsp&nbsp&nbsp&nbsp Bathrooms: 5 <br> Area: 450m2 &nbsp&nbsp&nbsp&nbsp
+                                Floor: 3<br> Parking: 8 spots</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="image/img6.jpg" width="100%" height="100%" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h4><span>Luxury Villa</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$2.264.000</h4>
+                        <h3>26 Mid Street Portland,Or 3854</h2>
+                            <p>Bedrooms: 5 &nbsp&nbsp&nbsp&nbsp Bathrooms: 4 <br> Area: 225m2 &nbsp&nbsp&nbsp&nbsp
+                                Floor: 3<br> Parking: 10 spots</p>
+                            <hr>
+                            <button> Schedule a visit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="next-page">
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Properties.html">Properties</a></li>
-                <li><a href="Property Details.html">Property details</a></li>
-                <li><a href="Contact Us.html".html">Contact us</a></li>
-                <li><a href="#"> Schedule a visit</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-
-        <div class="page-header">
-            <span class="col-1">
-                <a href="#">Home</a>
-                / Properties
-            </span>
-            <h3>Properties</h3>
-
-        </div>
-
-        <div class="section properties">
-            <ul class="properties-filter">
                 <li>
-                    <a href="#"> Show All</a>
-                </li>
-                <li>
-                    <a href="#"> Appartment</a>
-                </li>
-                <li>
-                    <a href="#"> Villa House</a>
-                </li>
-                <li>
-                    <a href="#"> Penthouse</a>
+                    <a style="background-color: #f35525;" href="Properties.html">1</a>
+                    <a href="Properties.html">2</a>
+                    <a href="Properties.html">3</a>
+                    <a class="arrow" href="Properties.html"><svg xmlns="http://www.w3.org/2000/svg" height="17px"
+                            viewBox="0 -960 960 960" width="17px" fill="#e3e3e3">
+                            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                        </svg>
+                    </svg>
+                    </a>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <section>
-        <div> <img src="image/img4.jpg" width="280px" height="230px" alt=""><br>
-            <b>Luxury Villa &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$2.264.000</span></b>
-            <h3>18 New streat miami,OR97219</h2>
-                <p>Bedrooms: 8 &nbsp Bathrooms: 8 <br> Area: 545m2 &nbsp Floor: 3<br> Parking: 6 spots</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-        <br>
-        <div> <img src="image/img6.jpg" width="280px" height="230px" alt=""><br>
-            <b>Luxury Villa &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$1.180.000</span></b>
-            <h3>54 New Street Floride.OR<br>27001</h2>
-                <p>Bedrooms: 6 &nbsp Bathrooms: 5 <br> Area: 450m2 &nbsp Floor: 3<br> Parking: 8 spots</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-
-        <div> <img src="image/img1.jpg" width="280px" height="230px" alt=""><br>
-            <b>Luxury Villa &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$2.264.000</span></b>
-            <h3>26 Mid Street Portland,Or<br>38540</h2>
-                <p>Bedrooms: 5 &nbsp Bathrooms: 4 <br> Area: 225m2 &nbsp Floor: 3<br> Parking: 10 spots</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-
-    </section>
-
-    <section>
-        <div> <img src="image/img7.jpg" width="280px" height="230px" alt=""><br>
-            <b>Apartment &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$584.500</span></b>
-            <h3>12 Hope Street Portland,OR<br>12650</h2>
-                <p>Bedrooms: 4 &nbsp Bathrooms: 3 <br> Area: 125m2 &nbsp Floor: 25th<br> Parking: 2 cars</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-        <br>
-        <div> <img src="image/img8.jpg" width="280px" height="230px" alt=""><br>
-            <b>Penthouse &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$925.600</span></b>
-            <h3>34 Hope street Portland,OR<br>42680</h2>
-                <p>Bedrooms: 4 &nbsp Bathrooms: 4 <br> Area: 180m2 &nbsp Floor: 38th<br> Parking: 2 cars</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div><br>
-
-        <div> <img src="image/img9.jpg" width="280px" height="230px" alt=""><br>
-            <b>Modern Condo &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$450.000</span></b>
-            <h3>18 New streat miami,OR97219</h2>
-                <p>Bedrooms: 3 &nbsp Bathrooms: 2 <br> Area: 165m2 &nbsp Floor: 26th<br> Parking: 3 cars</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-
-
-
-    </section>
-
-    <section>
-        <div> <img src="image/img1.jpg" width="280px" height="230px" alt=""><br>
-            <b>Luxury Villa &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$2.264.000</span></b>
-            <h3>26 Mid Street Portland,Or<br>38540</h2>
-                <p>Bedrooms: 5 &nbsp Bathrooms: 4 <br> Area: 225m2 &nbsp Floor: 3<br> Parking: 10 spots</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-        <div> <img src="image/img6.jpg" width="280px" height="230px" alt=""><br>
-            <b>Luxury Villa &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$1.180.000</span></b>
-            <h3>54 New Street Floride.OR<br>27001</h2>
-                <p>Bedrooms: 6 &nbsp Bathrooms: 5 <br> Area: 450m2 &nbsp Floor: 3<br> Parking: 8 spots</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-        <div> <img src="image/img4.jpg" width="280px" height="230px" alt=""><br>
-            <b>Luxury Villa &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<span>$2.264.000</span></b>
-            <h3>18 New streat miami,OR97219</h2>
-                <p>Bedrooms: 8 &nbsp Bathrooms: 8 <br> Area: 545m2 &nbsp Floor: 3<br> Parking: 6 spots</p>
-                <hr>
-                <button> Schedule a visit</button>
-        </div>
-
-    </section>
-
-
-    <section>
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">>></a></li>
-        </ul>
-    </section>
+        </section>
     </main>
 
     <footer>
-        <h2>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design:TemplateMo </h2>
+        <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design:TemplateMo </p>
     </footer>
 
 
@@ -168,4 +217,5 @@
 
     <script src="Js/Function.js"></script>
 </body>
+
 </html>
