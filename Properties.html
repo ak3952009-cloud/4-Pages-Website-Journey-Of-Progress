@@ -11,6 +11,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="top-header">
         <div class="top-header-img">
@@ -56,17 +57,19 @@
                 </p>
             </div>
         </section>
-        <section class="properties-button">
-            <div class="deal-info-button">
-                <button style="background-color: #f35525;">Show All</button>
-                <button>Appartment</button>
-                <button>Villa House</button>
-                <button>Penthouse</button>
-            </div>
-        </section>
+      <section class="properties-button">
+    <div class="deal-info-button">
+        <button data-filter="all" class="active">Show All</button>
+        <button data-filter="apartment">Apartment</button>
+        <button data-filter="villa">Villa House</button>
+        <button data-filter="penthouse">Penthouse</button>
+    </div>
+</section>
+
         <section class="product-properties">
             <div class="property-row">
-                <div class="product">
+               <div class="product" data-category="villa">
+
                     <div class="product-image">
                         <img src="image/img4.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -79,7 +82,7 @@
                         <button> Schedule a visit</button>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product" data-category="villa">
                     <div class="product-image">
                         <img src="image/img6.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -92,7 +95,7 @@
                             <button> Schedule a visit</button>
                     </div>
                 </div>
-                <div class="product">
+             <div class="product" data-category="villa">
                     <div class="product-image">
                         <img src="image/img4.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -107,7 +110,7 @@
                 </div>
             </div>
             <div class="property-row">
-                <div class="product">
+               <div class="product" data-category="penthouse">
                     <div class="product-image">
                         <img src="image/img7.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -120,7 +123,7 @@
                             <button> Schedule a visit</button>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product" data-category="penthouse">
                     <div class="product-image">
                         <img src="image/img8.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -133,7 +136,7 @@
                             <button> Schedule a visit</button>
                     </div>
                 </div>
-                <div class="product">
+               <div class="product" data-category="penthouse">
                     <div class="product-image">
                         <img src="image/img9.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -148,7 +151,7 @@
                 </div>
             </div>
             <div class="property-row">
-                <div class="product">
+               <div class="product" data-category="apartment">
                     <div class="product-image">
                         <img src="image/img5.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -161,7 +164,7 @@
                         <button> Schedule a visit</button>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product" data-category="apartment">
                     <div class="product-image">
                         <img src="image/img4.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -174,7 +177,7 @@
                             <button> Schedule a visit</button>
                     </div>
                 </div>
-                <div class="product">
+               <div class="product" data-category="apartment">
                     <div class="product-image">
                         <img src="image/img6.jpg" width="100%" height="100%" alt="">
                     </div>
@@ -199,7 +202,7 @@
                             viewBox="0 -960 960 960" width="17px" fill="#e3e3e3">
                             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
                         </svg>
-                    </svg>
+                        </svg>
                     </a>
                 </li>
             </ul>
