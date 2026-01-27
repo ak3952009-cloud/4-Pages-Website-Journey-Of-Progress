@@ -13,6 +13,19 @@
 </head>
 
 <body>
+   <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+<div id="content" style="display:none;">
+</div>
     <div class="top-header">
         <div class="top-header-img">
             <i class="fa-solid fa-envelope"></i> info@company.com
@@ -44,22 +57,27 @@
     </header>
     
     <main>
+         <div id="loader">
+    <div class="spinner"></div>
+  </div>
 
         <section>
             <div class="banner">
-                <div class="previous-arrow">
+                <div class="previous-arrow" 
+                onclick="prevBanner()">
                      <i class="fa-solid fa-angle-left"></i>
                 </div>
-                <div class="next-arrow">
+                <div class="next-arrow"
+                 onclick="nextBanner()">
                       <i class="fa-solid fa-angle-right"></i>
                 </div>
-                <img src="image/banner1.jpg" width="100%" height="110%" alt="banner">
+                <img id="bannerImg" src="image/banner1.jpg" width="100%" height="110%" alt="banner">
                 <div class="banner-content">
                     <div class="p">
-                        <p>Toronto, <span>Canada</span></p>
+                        <p id="bannerLocation">Toronto, <span>Canada</span></p>
                     </div>
-                    <h1>hurry</h1>
-                    <h1> Get the Best Villa for you</h1>
+                    <h1 id="bannerSmallerText">Hurry!</h1>
+                    <h1 id="bannerBigText"> Get the Best Villa for you</h1>
                 </div>
             </div>
         </section>
@@ -80,17 +98,17 @@
                     <h1>Best Appartment & Sea view</h1>
                     <br>
                     <div class="link">
-                        <h3>Best useful links?</h3>
+                        <h3 class="toggle">Best useful links?</h3>
 
-                        <p style="display: none;">Get the best villa website template in HTML CSS<br> and Bootstrap for
+                        <p>Get the best villa website template in HTML CSS<br> and Bootstrap for
                             your
                             business. TemplateMo
                             <br>provides you
                             the best free CSS templates in the<br> world. Please tell your friends about it.
                         </p>
                         <hr>
-                        <h3>How does this work?</h3>
-                        <p style="display: none;">Dolor almesit amet, consectetur adipiscing elit,<br> sed doesn't
+                        <h3 class="toggle">How does this work?</h3>
+                        <p>Dolor almesit amet, consectetur adipiscing elit,<br> sed doesn't
                             eiusmod
                             tempor incididunt ut
                             labore<br>
@@ -98,8 +116,8 @@
                             magna<br>
                             aliqua.</p>
                         <hr>
-                        <h3>Why is Villa Agency the best?</h3>
-                        <p style="display: none;">Dolor almesit amet, consectetur adipiscing elit, <br> sed doesn't
+                        <h3 class="toggle">Why is Villa Agency the best?</h3>
+                        <p>Dolor almesit amet, consectetur adipiscing elit, <br> sed doesn't
                             eiusmod
                             tempor incididunt ut
                             labore<br>
@@ -203,42 +221,42 @@
                     <h1>Deal Right Now!</h1>
                 </div>
                 <div class="deal-info-button">
-                    <button style="background-color: #f35525;">Appartment</button>
-                    <button>Villa House</button>
-                    <button>Penthouse</button>
+                    <button data-type="apartment"class="active">Appartment</button>
+                    <button data-type="villa">Villa House</button>
+                    <button data-type="penthouse">Penthouse</button>
                 </div>
             </div>
             <div class="deal-main">
                 <div class="detail-info-content">
                     <div class="content1">
-                        <p>Total Flat Space &nbsp <span>185 m2</span></p>
+                        <p>Total Flat Space &nbsp <span id="space">185 m2</span></p>
                     </div>
                     <div class="content1">
-                        <p>Floor number &nbsp<span>26th</span></p>
+                        <p>Floor number &nbsp<span id="floor">26th</span></p>
                     </div>
                     <div class="content1">
-                        <p>Number of rooms &nbsp <span>4</span></p>
+                        <p>Number of rooms &nbsp <span id="rooms">4</span></p>
                     </div>
                     <div class="content1">
-                        <p>Parking Available &nbsp <span>Yes</span></p>
+                        <p>Parking Available &nbsp <span id="parking">Yes</span></p>
                     </div>
                     <div style="border-bottom: none;" class="content1">
-                        <p>Payment Process &nbsp <span>Bank</span></p>
+                        <p>Payment Process &nbsp <span id="payment">Bank</span></p>
                     </div>
 
                 </div>
                 <div class="deal-info-image">
-                    <img src="image/img3.jpg" width="410px" height="330px" alt="">
+                    <img id="dealImage" src="image/img3.jpg" width="410px" height="330px" alt="">
                 </div>
                 <div class="deal-info-content1">
-                    <h4>Extra Info About Property</h4>
+                    <h4 id="dealTitle">Extra Info About Property</h4>
                     <br>
-                    <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, do<br> eiusmod tempor pack
+                    <p id="dealPara1">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit, do<br> eiusmod tempor pack
                         incididunt ut<br>
                         labore et dolore magna aliqua <br>quised ipsum suspendisse.</p>
                     <br>
                     <br>
-                    <p>
+                    <p id="dealPara2">
                         When you need free CSS templates,<br> you can simply type TemplateMo in<br> any search engine
                         website.
                         In<br>
@@ -404,8 +422,9 @@
 
 
 
+    <script src="Js/Function.js">
 
-    <script src="Js/Function.js"></script>
+    </script>
 </body>
 
 </html>
